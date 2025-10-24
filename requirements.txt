@@ -1,0 +1,47 @@
+# -----------------------------
+# FETCH & PARSE
+# -----------------------------
+arxiv==1.4.0
+tqdm==4.66.1
+feedparser==6.0.10
+requests==2.31.0
+
+# -----------------------------
+# PDF EXTRACTION / CLEANING
+# -----------------------------
+pymupdf==1.22.0           # fitz
+
+# -----------------------------
+# EMBEDDING / NLP
+# -----------------------------
+sentence-transformers==5.1.1
+huggingface-hub==0.35.3
+numpy==1.26.4
+
+# -----------------------------
+# VECTOR STORES
+# -----------------------------
+chromadb==0.4.0
+faiss-cpu==1.12.0
+
+# -----------------------------
+# API / UI (Phase 5)
+# -----------------------------
+fastapi==0.95.2
+uvicorn==0.23.1
+gradio==3.49.0
+python-multipart==0.0.6
+pydantic==1.10.12
+
+# -----------------------------
+# UTILITIES
+# -----------------------------
+pytest==7.4.0
+loguru==0.7.0
+python-dotenv==1.0.1      # added for .env support
+
+# -----------------------------
+# LLM BACKENDS
+# -----------------------------
+groq==0.3.0               # added for Groq API client
+rank_bm25==0.2.2

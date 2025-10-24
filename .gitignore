@@ -1,0 +1,11 @@
+.env
+venv311/
+__pycache__/
+data/
+*.pyc
+.DS_Store
+.idea/
+.vscode/
+DOCKERFILE
+.dockerignore
+docker-entrypoint.sh
