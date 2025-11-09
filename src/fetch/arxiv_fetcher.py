@@ -13,7 +13,7 @@ from urllib.parse import quote_plus
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 logger = logging.getLogger(__name__)
 
-DATA_DIR = Path("data/raw")
+DATA_DIR = Path("src/data/raw")
 PDF_BASE = DATA_DIR / "pdfs"
 META_BASE = DATA_DIR / "meta"
 DATA_DIR.mkdir(parents=True, exist_ok=True)

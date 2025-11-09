@@ -3,7 +3,7 @@ import chromadb
 from chromadb.config import Settings
 
 class ChromaDBClient:
-    def __init__(self, persist_path="data/vectorstore", collection_name="rag_docs"):
+    def __init__(self, persist_path="src/data/vectorstore", collection_name="rag_docs"):
         self.client = chromadb.PersistentClient(path=persist_path)
         self.collection = self.client.get_or_create_collection(collection_name)
 

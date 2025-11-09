@@ -44,12 +44,12 @@
     
 # retrievers/retriever.py
 import chromadb
-from chromadb.config import Settings
-from sentence_transformers import SentenceTransformer
+from src.embeddings.encoder import Embedder
 
 class DenseRetriever:
     def __init__(self, db_path="data/vectorstore", collection_name="rag_docs", model_name="all-MiniLM-L6-v2"):
-        self.model = SentenceTransformer(model_name)
+
+        self.model = Embedder()
         self.client = chromadb.PersistentClient(path=db_path)
         try:
             self.collection = self.client.get_collection(collection_name)
@@ -57,7 +57,7 @@ class DenseRetriever:
             self.collection = self.client.get_or_create_collection(collection_name)
 
     def retrieve(self, query: str, k: int = 5):
-        query_embedding = self.model.encode([query], normalize_embeddings=True).tolist()
+        query_embedding = self.model.encode([query])
         results = self.collection.query(query_embeddings=query_embedding, n_results=k)
         docs = results["documents"][0]
         metas = results["metadatas"][0]

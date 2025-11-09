@@ -91,13 +91,12 @@
 
 # qa/llm_runner.py
 import os
-os.environ["CHROMA_TELEMETRY_ENABLED"] = "false"
 import requests
 import time
 from dotenv import load_dotenv
 
 load_dotenv()
-
+CHROMA_TELEMETRY_ENABLED = "false"
 class LLMRunner:
     def __init__(self,
                  model: str = None,

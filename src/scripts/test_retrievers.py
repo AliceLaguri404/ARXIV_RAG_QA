@@ -1,6 +1,6 @@
 # scripts/test_retrievers.py
 import time
-from retrievers.manager import RetrieverManager
+from src.retrievers.manager import RetrieverManager
 
 mgr = RetrieverManager()
 queries = [

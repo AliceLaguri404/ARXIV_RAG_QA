@@ -10,11 +10,11 @@ class RetrieverManager:
         cfg = config or {}
         logger.info("Initializing RetrieverManager...")
         # instantiate only lightweight ones first; heavy ones instantiated here but you can change
-        from retrievers.dense import DenseRetriever
-        from retrievers.hybrid import HybridRetriever
+        from src.retrievers.dense import DenseRetriever
+        from src.retrievers.hybrid import HybridRetriever
         # optional heavy components; instantiate if you plan to use
-        from retrievers.bm25 import BM25Retriever
-        from retrievers.hyde import HyDERetriever
+        from src.retrievers.bm25 import BM25Retriever
+        from src.retrievers.hyde import HyDERetriever
         # from retrievers.reranker import Reranker
 
         self._instances = {

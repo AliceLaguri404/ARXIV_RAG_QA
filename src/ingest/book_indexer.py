@@ -8,7 +8,7 @@ from typing import Optional, Dict
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 logger = logging.getLogger(__name__)
 
-DATA_DIR = Path("data/raw")
+DATA_DIR = Path("src/data/raw")
 MANUAL_META_DIR = DATA_DIR / "manual_meta"
 MANUAL_META_DIR.mkdir(parents=True, exist_ok=True)
 

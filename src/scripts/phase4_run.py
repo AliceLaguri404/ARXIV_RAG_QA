@@ -3,8 +3,8 @@ import os
 os.environ["CHROMA_TELEMETRY_ENABLED"] = "false"
 import logging
 import time
-from retrievers.manager import RetrieverManager
-from qa.llm_runner import LLMRunner
+from src.retrievers.manager import RetrieverManager
+from src.qa.llm_runner import LLMRunner
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 logger = logging.getLogger(__name__)

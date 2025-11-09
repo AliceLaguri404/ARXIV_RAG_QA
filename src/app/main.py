@@ -75,8 +75,8 @@ os.environ["CHROMA_TELEMETRY_ENABLED"] = "false"
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from typing import Optional, List
-from retrievers.manager import RetrieverManager
-from qa.llm_runner import LLMRunner
+from src.retrievers.manager import RetrieverManager
+from src.qa.llm_runner import LLMRunner
 from fastapi.concurrency import run_in_threadpool
 
 # Configure logging

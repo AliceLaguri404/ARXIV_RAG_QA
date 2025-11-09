@@ -1,7 +1,7 @@
 # retrievers/hyde.py
 from typing import List, Dict
-from embeddings.encoder import Embedder  # your embeddings/encoder.py
-from qa.llm_runner import LLMRunner
+from src.embeddings.encoder import Embedder  # your embeddings/encoder.py
+from src.qa.llm_runner import LLMRunner
 import chromadb
 import logging
 

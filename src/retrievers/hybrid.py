@@ -1,8 +1,8 @@
 # retrievers/hybrid.py
 from typing import List, Dict
-from retrievers.bm25 import BM25Retriever
-from retrievers.dense import DenseRetriever
-from retrievers.reranker import Reranker
+from src.retrievers.bm25 import BM25Retriever
+from src.retrievers.dense import DenseRetriever
+from src.retrievers.reranker import Reranker
 import logging
 logger = logging.getLogger(__name__)
 
