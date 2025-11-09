@@ -5,6 +5,7 @@
 > 🚀 Deployable via **FastAPI** or **Gradio UI**, and fully containerized for reproducible setups.
 
 ---
+<img width="1346" height="806" alt="Screenshot 2025-10-24 at 9 04 03 AM" src="https://github.com/user-attachments/assets/d8c10697-a56d-4c3e-932a-701886d87b26" />
 
 ## 🧩 Architecture Overview
 
@@ -106,7 +107,7 @@ Then open: [http://127.0.0.1:8000/docs]
 ### 🎨 Run Gradio UI
 
 ```bash
-python -m src.ui.gradio_app
+python -m ui.gradio_app
 ```
 
 Then open: [http://127.0.0.1:7860]
@@ -165,7 +166,6 @@ docker run --rm -it \
 ```
 src/
  ├── app/                  # FastAPI backend
- ├── ui/                   # Gradio interface
  ├── scripts/              # Pipeline phases
  ├── chunker/              # Semantic/recursive chunking
  ├── embeddings/           # SentenceTransformer-based encoder
@@ -175,6 +175,7 @@ data/
  ├── raw/                  # Downloaded PDFs
  ├── processed/            # Extracted and chunked text
  └── vectorstore/          # Chroma persistent storage
+ui/                        # Gradio interface
 docker-entrypoint.sh
 Dockerfile
 requirements.txt
